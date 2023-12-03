@@ -33,12 +33,14 @@ func TestSolveCurrentDay(t *testing.T) {
 		//{input: util.GetInput(), want: 0},
 	}
 
-	for _, tc := range tests {
-		got := SolveCurrentDay(tc.input)
+	for i, tc := range tests {
+		t.Run(fmt.Sprintf("test %d", i), func(t *testing.T) {
+			got := SolveCurrentDay(tc.input)
 
-		if tc.want != got {
-			t.Errorf("Expected %d but got %d", tc.want, got)
-		}
+			if tc.want != got {
+				t.Errorf("Expected %d but got %d", tc.want, got)
+			}
+		})
 	}
 }
 EOF
@@ -71,12 +73,14 @@ func TestSolveCurrentDayWithTwist(t *testing.T) {
 		//{input: util.GetInput(), want: 0},
 	}
 
-	for _, tc := range tests {
-		got := SolveCurrentDayWithTwist(tc.input)
+	for i, tc := range tests {
+		t.Run(fmt.Sprintf("test %d", i), func(t *testing.T) {
+			got := SolveCurrentDay(tc.input)
 
-		if tc.want != got {
-			t.Errorf("Expected %d but got %d", tc.want, got)
-		}
+			if tc.want != got {
+				t.Errorf("Expected %d but got %d", tc.want, got)
+			}
+		})
 	}
 }
 EOF
