@@ -9,7 +9,7 @@ cat <<EOF > ${DAY}_1.go
 package main
 
 func SolveCurrentDay(input string) int {
-  return 0
+	return 0
 }
 EOF
 
@@ -47,7 +47,7 @@ cat <<EOF > ${DAY}_2.go
 package main
 
 func SolveCurrentDayWithTwist(input string) int {
-  return 0
+	return 0
 }
 EOF
 
