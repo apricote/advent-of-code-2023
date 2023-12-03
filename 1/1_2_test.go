@@ -1,8 +1,9 @@
 package main
 
 import (
+	"fmt"
+	"github.com/apricote/advent-of-code-2023/util"
 	"testing"
-	//"github.com/apricote/advent-of-code-2023/util"
 )
 
 func TestSolveCurrentDayWithTwist(t *testing.T) {
@@ -12,15 +13,18 @@ func TestSolveCurrentDayWithTwist(t *testing.T) {
 	}
 
 	tests := []test{
-		//{input: util.GetExampleInput(), want: 0},
-		//{input: util.GetInput(), want: 0},
+		{input: util.GetInputFromPath("input_example2.txt"), want: 281},
+		{input: util.GetInput(), want: 55260},
+		{input: util.GetInputFromPath("input_rc.txt"), want: 92},
 	}
 
-	for _, tc := range tests {
-		got := SolveCurrentDayWithTwist(tc.input)
+	for i, tc := range tests {
+		t.Run(fmt.Sprintf("test %d", i), func(t *testing.T) {
+			got := SolveCurrentDayWithTwist(tc.input)
 
-		if tc.want != got {
-			t.Errorf("Expected %d but got %d", tc.want, got)
-		}
+			if tc.want != got {
+				t.Errorf("Expected %d but got %d", tc.want, got)
+			}
+		})
 	}
 }
