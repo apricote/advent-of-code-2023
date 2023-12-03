@@ -17,6 +17,7 @@ cat <<EOF > ${DAY}_1_test.go
 package main
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/apricote/advent-of-code-2023/util"
@@ -57,6 +58,7 @@ cat <<EOF > ${DAY}_2_test.go
 package main
 
 import (
+	"fmt"
 	"testing"
 
 	//"github.com/apricote/advent-of-code-2023/util"
@@ -75,7 +77,7 @@ func TestSolveCurrentDayWithTwist(t *testing.T) {
 
 	for i, tc := range tests {
 		t.Run(fmt.Sprintf("test %d", i), func(t *testing.T) {
-			got := SolveCurrentDay(tc.input)
+			got := SolveCurrentDayWithTwist(tc.input)
 
 			if tc.want != got {
 				t.Errorf("Expected %d but got %d", tc.want, got)

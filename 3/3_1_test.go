@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/apricote/advent-of-code-2023/util"
@@ -13,8 +14,8 @@ func TestSolveCurrentDay(t *testing.T) {
 	}
 
 	tests := []test{
-		{input: util.GetExampleInput(), want: 0},
-		//{input: util.GetInput(), want: 0},
+		{input: util.GetExampleInput(), want: 4361},
+		{input: util.GetInput(), want: 0},
 	}
 
 	for i, tc := range tests {
