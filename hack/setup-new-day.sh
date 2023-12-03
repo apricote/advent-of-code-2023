@@ -19,7 +19,7 @@ package main
 import (
 	"testing"
 
-	"github.com/apricote/advent-of-code-2022/util"
+	"github.com/apricote/advent-of-code-2023/util"
 )
 
 func TestSolveCurrentDay(t *testing.T) {
@@ -57,7 +57,7 @@ package main
 import (
 	"testing"
 
-	//"github.com/apricote/advent-of-code-2022/util"
+	//"github.com/apricote/advent-of-code-2023/util"
 )
 
 func TestSolveCurrentDayWithTwist(t *testing.T) {
@@ -84,4 +84,4 @@ EOF
 touch input_example.txt input.txt
 
 git add ./
-git commit -m "bootstrap day ${DAY}"
+git commit -m "chore: bootstrap day ${DAY}"
