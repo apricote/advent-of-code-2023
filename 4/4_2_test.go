@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	//"github.com/apricote/advent-of-code-2023/util"
+	"github.com/apricote/advent-of-code-2023/util"
 )
 
 func TestSolveCurrentDayWithTwist(t *testing.T) {
@@ -14,8 +14,8 @@ func TestSolveCurrentDayWithTwist(t *testing.T) {
 	}
 
 	tests := []test{
-		//{input: util.GetExampleInput(), want: 0},
-		//{input: util.GetInput(), want: 0},
+		{input: util.GetExampleInput(), want: 30},
+		{input: util.GetInput(), want: 7013204},
 	}
 
 	for i, tc := range tests {

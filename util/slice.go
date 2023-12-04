@@ -1,7 +1,7 @@
 package util
 
 func Unique[T comparable](slice []T) []T {
-	unique := []T{}
+	unique := make([]T, 0, len(slice))
 	seen := map[T]bool{}
 
 	for _, item := range slice {
